@@ -52,7 +52,7 @@ const Navbar = () => {
         <div className="lg:hidden">
           <button className="navbar-burger flex items-center p-3">
             <a
-              className=" inline-block py-1 px-4 bg-black hover:bg-white hover:text-black text-sm text-white font-bold rounded-md transition duration-200 border-2 border-gray-400"
+              className=" inline-block py-1 px-4 hover:bg-black bg-white text-black text-sm hover:text-white font-bold rounded-md transition duration-200 border-2 border-gray-400"
               href="#links"
             >
               Menu
@@ -115,7 +115,7 @@ const Navbar = () => {
             </a>
             <button className="navbar-close">
               <a
-                className=" inline-block py-1 px-2 bg-black hover:bg-white hover:text-black text-sm text-white font-bold rounded-md transition duration-200 border-2 border-gray-400"
+                className=" inline-block py-1 px-2 hover:bg-black bg-white text-black text-sm hover:text-white font-bold rounded-md transition duration-200 border-2 border-gray-400"
                 href="#links"
               >
                 Close
