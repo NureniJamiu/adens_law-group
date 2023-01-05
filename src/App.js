@@ -1,5 +1,6 @@
-import { Header } from "./containers";
 import { Navbar } from "./components";
+import { Header } from "./containers";
+import { About } from "./containers";
 
 import "./App.css";
 
@@ -8,6 +9,7 @@ function App() {
     <div className="app">
       <Navbar />
       <Header />
+      <About />
     </div>
   );
 }
