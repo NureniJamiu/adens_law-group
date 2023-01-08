@@ -1,6 +1,14 @@
 import { Navbar } from "./components";
-import { Header } from "./containers";
-import { About } from "./containers";
+import {
+  Header,
+  About,
+  Services,
+  Experts,
+  Testimonial,
+  Hire,
+  Clients,
+  Footer,
+} from "./containers";
 
 import "./App.css";
 
@@ -10,6 +18,12 @@ function App() {
       <Navbar />
       <Header />
       <About />
+      <Services />
+      <Experts />
+      <Testimonial />
+      <Hire />
+      <Clients />
+      <Footer />
     </div>
   );
 }
