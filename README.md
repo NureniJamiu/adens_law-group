@@ -15,4 +15,4 @@ I have come to agree that the best and most effective way to learn something is 
 One area that particularly caught my focus was implementing the concept of writing good and maintanable code by strictly adhering to the DRY(Don't Repeat Yourself) principle and also implementing security best practices.<br>
 
 ## Conclusion
-I hope to carry on and build upon this project in the nearest future. I intend to refine it and make it a full-stack web application. I've chosen to keep the detail scripted until after project completion. I, however, dedicate this project to every curious student of education looking to improve his/her skill coding skill.
+I hope to carry on and build upon this project in the nearest future. I intend to refine it and make it a full-stack web application. I've chosen to keep the detail scripted until desired results are achieved. I, however, dedicate this project to every curious student of education looking to improve his/her coding skill.
