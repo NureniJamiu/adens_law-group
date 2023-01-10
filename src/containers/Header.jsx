@@ -19,7 +19,7 @@ const Header = () => {
         international clients. Our expertise on legal issues cuts across
         borders.
       </p>
-      <p className="bg-gray-300 text-center rounded-md py-4 mb-10 cursor-pointer md:inline-block md:text-sm md:px-6">
+      <p className="bg-gray-300 text-center rounded-md py-4 mb-10 cursor-pointer border-2 font-bold border-gray-300 transition ease-out duration-200 hover:bg-black hover:text-white hover:border-white md:inline-block md:text-sm md:px-6">
         Request a consultation
       </p>
       <div>
@@ -27,7 +27,7 @@ const Header = () => {
         <img
           src={stamp}
           alt="stamp"
-          className="absolute right-5 bottom-1 md:right-20 md:bottom-8"
+          className="absolute right-5 bottom-1 md:right-20 md:bottom-8 lg:right-72 lg:bottom-20"
         />
       </div>
     </div>

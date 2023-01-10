@@ -11,8 +11,10 @@ import partner7 from "../assets/partner7.png";
 const Clients = () => {
   return (
     <div className="mb-10">
-      <h3 className="text-3xl font-semibold text-center mb-8">Our clients</h3>
-      <div className="flex overflow-auto gap-2 h-20 px-2">
+      <h3 className="text-3xl font-semibold text-center mb-8 md:font-bold ">
+        Our clients
+      </h3>
+      <div className="flex overflow-auto gap-2 h-20 px-2 md:grid md:grid-cols-7 md:h-auto lg:px-28">
         <img src={partner5} alt="partner" className="bg-black rounded-lg" />
         <img src={partner3} alt="partner" className="bg-gray-300 rounded-lg" />
         <img src={partner4} alt="partner" className="rounded-lg" />

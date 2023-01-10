@@ -46,14 +46,14 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="relative py-4 px-4 flex justify-between items-center bg-black md:px-10 lg:px-20">
+      <nav className="relative py-4 px-4 flex justify-between items-center bg-black md:px-10 lg:px-28">
         <a class="text-3xl font-bold leading-none" href="#links">
           <img src={logo} alt="logo" width={150} />
         </a>
         <div class="lg:hidden">
           <button class="navbar-burger flex items-center text-white p-3">
             <a
-              className=" inline-block py-1 px-4  bg-white text-black text-sm hover:text-white font-bold rounded-md transition duration-200 border-2 border-black  hover:bg-black  hover:border-gray-400"
+              className=" inline-block py-1 px-4  bg-gray-300 text-black text-sm hover:text-white font-bold rounded-md transition duration-200 border-2 border-black  hover:bg-black  hover:border-gray-400"
               href="#links"
             >
               Menu
@@ -62,31 +62,34 @@ const Navbar = () => {
         </div>
         <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6">
           <li>
-            <a class="text-sm text-gray-400 hover:text-gray-500" href="#links">
+            <a
+              class="text-sm text-white font-bold hover:text-white"
+              href="#links"
+            >
               Home
             </a>
           </li>
 
           <li>
-            <a class="text-sm text-blue-600 font-bold" href="#links">
+            <a class="text-sm text-gray-400 hover:text-white" href="#links">
               Practice areas
             </a>
           </li>
 
           <li>
-            <a class="text-sm text-gray-400 hover:text-gray-500" href="#links">
+            <a class="text-sm text-gray-400 hover:text-white" href="#links">
               The team
             </a>
           </li>
 
           <li>
-            <a class="text-sm text-gray-400 hover:text-gray-500" href="#links">
+            <a class="text-sm text-gray-400 hover:text-white" href="#links">
               Blog
             </a>
           </li>
         </ul>
         <a
-          class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200"
+          class="hidden py-2 px-6 bg-black border-2 border-white  text-sm text-white font-bold rounded transition duration-200 hover:bg-gray-300 hover:border-gray-300 hover:text-black lg:inline-block"
           href="#links"
         >
           Get in touch
@@ -101,7 +104,7 @@ const Navbar = () => {
             </a>
             <button class="navbar-close">
               <a
-                className=" inline-block py-1 px-4 bg-white text-black text-sm hover:text-white font-bold rounded-md transition duration-200 border-2 border-black hover:bg-black hover:border-gray-200"
+                className=" inline-block py-1 px-4 bg-gray-300 text-black text-sm hover:text-white font-bold rounded-md transition duration-200 border-2 border-black hover:bg-black hover:border-gray-200"
                 href="#links"
               >
                 Close
@@ -112,7 +115,7 @@ const Navbar = () => {
             <ul>
               <li class="mb-1">
                 <a
-                  class="block p-4 text-sm font-semibold transition duration-200 text-white hover:bg-blue-50 hover:text-black"
+                  class="block p-4 text-sm font-semibold transition duration-200 text-white hover:bg-blue-50 hover:text-black rounded"
                   href="#links"
                 >
                   Home
