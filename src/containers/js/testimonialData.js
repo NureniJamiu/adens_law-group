@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default [
   {
-    image: require("../../assets/client1.png"),
+    image: require("../../assets/client1.jpg"),
     testimonial:
       '"I hired Ademola several months ago to help me as a beneficiary of my family trust. His work was outstanding. As with situations of this kind, my emotions ran wild at times and he was highly attentive, calm, honest, respectful and responsive. I am very happy with the outcome of our work together and recommend this law firm highly."',
     name: "Adedayo Welignton, Hustler Capital",
