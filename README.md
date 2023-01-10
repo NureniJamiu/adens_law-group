@@ -1,6 +1,6 @@
 # About Project
 
-This project is inspired by [@demscr3ation](https://twitter.com/demscr3ations). I came across his UI design on [twitter](https://twitter.com) and felt the desire to bring it to life. I reached out to him immediately and here is the result of our conversation.
+This project is inspired by [@demscr3ation](https://twitter.com/demscr3ations). I came across his UI design on [twitter](https://twitter.com) and felt the desire to bring it to life. I reached out to him immediately and this project is the result of our conversation.
 
 ## Technologies Used
 
