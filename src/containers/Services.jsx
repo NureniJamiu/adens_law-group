@@ -3,13 +3,14 @@ import React from "react";
 import icon1 from "../assets/icon1.png";
 import pattern1 from "../assets/pattern1.png";
 import cardData from "./js/cardData";
+import { Link } from "react-router-dom";
 
 import { BsArrowUpRightCircle } from "react-icons/bs";
 
 const Services = () => {
   return (
-    <section>
-      <div className="relative bg-orange-50 py-10 px-5 lg:px-28">
+    <section className="transition ease duration-100">
+      <div className="relative bg-orange-50 py-10 px-5 md:px-12 lg:px-28">
         <div className="md:grid gap-10 md:grid-cols-3">
           <div className="md:col-span-1">
             <img
@@ -24,9 +25,11 @@ const Services = () => {
             <p className="text-center text-black mb-6 md:text-sm">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro
             </p>
-            <p className="bg-black px-2 py-3 text-center text-white mx-8 rounded-md cursor-pointer transition duration-200 border-2 mb-16 border-black hover:bg-orange-50 hover:text-black hover:border-black md:w-60 md:mx-auto">
-              View all practice areas
-            </p>
+            <Link to="/construction">
+              <p className="bg-black px-2 py-3 text-center text-white mx-8 rounded-md cursor-pointer transition duration-200 border-2 mb-16 border-black hover:bg-orange-50 hover:text-black hover:border-black md:w-60 md:mx-auto">
+                View all practice areas
+              </p>
+            </Link>
           </div>
 
           <div className="md:col-span-2 md:grid md:grid-cols-2 md:gap-4">

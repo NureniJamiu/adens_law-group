@@ -13,7 +13,7 @@ import expert8 from "../assets/expert8.png";
 
 const Experts = () => {
   return (
-    <div className="py-10 px-2 lg:px-28">
+    <div className="py-10 px-2 lg:px-28 md:px-12">
       <h3 className="text-2xl text-center font-bold mb-2 md:hidden">
         Meet Our Experts
       </h3>

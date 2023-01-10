@@ -1,6 +1,7 @@
 import React from "react";
 
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   // Burger menus
@@ -47,9 +48,14 @@ const Navbar = () => {
   return (
     <div>
       <nav className="relative py-4 px-4 flex justify-between items-center bg-black md:px-10 lg:px-28">
-        <a class="text-3xl font-bold leading-none" href="#links">
-          <img src={logo} alt="logo" width={150} />
-        </a>
+        <Link to="/">
+          <div
+            className="inline-block text-3xl font-bold leading-none"
+            href="/"
+          >
+            <img src={logo} alt="logo" width={150} />
+          </div>
+        </Link>
         <div class="lg:hidden">
           <button class="navbar-burger flex items-center text-white p-3">
             <a
@@ -62,30 +68,36 @@ const Navbar = () => {
         </div>
         <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6">
           <li>
-            <a
-              class="text-sm text-white font-bold hover:text-white"
-              href="#links"
-            >
+            <Link className="text-sm text-white font-bold" to="/">
               Home
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a class="text-sm text-gray-400 hover:text-white" href="#links">
+            <Link
+              className="text-sm text-gray-400 hover:text-white"
+              to="/construction"
+            >
               Practice areas
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a class="text-sm text-gray-400 hover:text-white" href="#links">
+            <Link
+              className="text-sm text-gray-400 hover:text-white"
+              to="/construction"
+            >
               The team
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a class="text-sm text-gray-400 hover:text-white" href="#links">
+            <Link
+              className="text-sm text-gray-400 hover:text-white"
+              to="/construction"
+            >
               Blog
-            </a>
+            </Link>
           </li>
         </ul>
         <a
@@ -98,10 +110,12 @@ const Navbar = () => {
       <div class="navbar-menu relative z-50 hidden">
         <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
         <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-black border-r overflow-y-auto">
-          <div class="flex items-center mb-8">
-            <a class="mr-auto text-3xl font-bold leading-none" href="#links">
-              <img src={logo} alt="logo" width={150} />
-            </a>
+          <div class="flex justify-between items-center mb-8">
+            <Link to="/">
+              <div className="inline-block mr-auto text-3xl font-bold leading-none">
+                <img src={logo} alt="logo" width={150} />
+              </div>
+            </Link>
             <button class="navbar-close">
               <a
                 className=" inline-block py-1 px-4 bg-gray-300 text-black text-sm hover:text-white font-bold rounded-md transition duration-200 border-2 border-black hover:bg-black hover:border-gray-200"
@@ -114,36 +128,36 @@ const Navbar = () => {
           <div>
             <ul>
               <li class="mb-1">
-                <a
-                  class="block p-4 text-sm font-semibold transition duration-200 text-white hover:bg-blue-50 hover:text-black rounded"
-                  href="#links"
+                <Link
+                  className="block p-4 text-sm font-semibold transition duration-200 text-white hover:bg-blue-50 hover:text-black rounded"
+                  to="/"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li class="mb-1">
-                <a
-                  class="block p-4 text-sm font-semibold transition duration-200 text-white hover:bg-blue-50 hover:text-black rounded"
-                  href="#links"
+                <Link
+                  className="block p-4 text-sm font-semibold transition duration-200 text-white hover:bg-blue-50 hover:text-black rounded"
+                  to="/construction"
                 >
                   Practice areas
-                </a>
+                </Link>
               </li>
               <li class="mb-1">
-                <a
-                  class="block p-4 text-sm font-semibold transition duration-200 text-white hover:bg-blue-50 hover:text-black rounded"
-                  href="#links"
+                <Link
+                  className="block p-4 text-sm font-semibold transition duration-200 text-white hover:bg-blue-50 hover:text-black rounded"
+                  to="/construction"
                 >
                   The team
-                </a>
+                </Link>
               </li>
               <li class="mb-1">
-                <a
-                  class="block p-4 text-sm font-semibold transition duration-200 text-white hover:bg-blue-50 hover:text-black rounded"
-                  href="#links"
+                <Link
+                  className="block p-4 text-sm font-semibold transition duration-200 text-white hover:bg-blue-50 hover:text-black rounded"
+                  to="/construction"
                 >
                   Blog
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

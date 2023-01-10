@@ -10,7 +10,7 @@ import partner7 from "../assets/partner7.png";
 
 const Clients = () => {
   return (
-    <div className="mb-10">
+    <div className="mb-10 md:px-12 lg:px-0">
       <h3 className="text-3xl font-semibold text-center mb-8 md:font-bold ">
         Our clients
       </h3>

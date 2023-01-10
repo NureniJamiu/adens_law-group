@@ -1,6 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import tick from "../assets/tick.png";
 import expert6 from "../assets/expert6.png";
 import expert7 from "../assets/expert7.png";
 import expert5 from "../assets/expert5.png";
@@ -11,7 +11,7 @@ import { IoIosCheckmarkCircle } from "react-icons/io";
 
 const Hire = () => {
   return (
-    <div className=" mt-20 mb-10 mx-2 md:flex md:items-center lg:mt-20 lg:px-28">
+    <div className=" mt-20 mb-10 mx-2 md:flex md:items-center md:px-12 lg:mt-20 lg:px-28">
       <div className="flex-1">
         <h3 className="text-2xl font-semibold text-center md:pl-4 md:w-96 md:text-left md:font-bold lg:px-0">
           If you find yourself in trouble, our lawyers can guide you
@@ -21,11 +21,11 @@ const Hire = () => {
           officia reprehenderit aut error aspernatur iure quo praesentium,
           eveniet facilis
         </p>
-        <a href="#link">
+        <Link to="/construction">
           <p className="text-center cursor-pointer bg-black text-white px-6 py-4 mx-20 rounded-lg mb-6 border-2 transition duration-200 border-black hover:bg-white hover:text-black md:px-2 md:py-3 md:ml-3 md:w-52 lg:w-64 lg:mx-0">
             Hire an Expert
           </p>
-        </a>
+        </Link>
         <div className="flex align-middle justify-around mb-6 md:justify-start md:ml-3 md:gap-3 lg:mx-0">
           <div className="flex items-center gap-1">
             <IoIosCheckmarkCircle className="text-green-500" />
