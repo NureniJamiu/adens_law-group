@@ -15,6 +15,7 @@ const Footer = () => {
       <p className="text-center text-gray-400 text-xs pt-8 pb-4">
         ©2022 Adens Law Group - RC 1405222
       </p>
+      <p>Made with love by dhulnurein</p>
     </div>
   );
 };
