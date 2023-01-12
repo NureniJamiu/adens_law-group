@@ -12,7 +12,7 @@ const Navbar = () => {
     { name: "Home" },
     { name: "Practice areas" },
     { name: "The team" },
-    { name: "blog" },
+    { name: "Blog" },
   ];
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
