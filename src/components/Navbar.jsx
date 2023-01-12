@@ -9,7 +9,7 @@ import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const navigation = [
-    { name: "Home" },
+    { name: "Home", href: "/" },
     { name: "Practice areas" },
     { name: "The team" },
     { name: "Blog" },
@@ -17,7 +17,7 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className=" bg-black md:px-12 lg:px-28 lg:py-1">
+    <div className=" bg-black md:px-12 lg:px-20 lg:py-1">
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden sm:top-[-20rem]"></div>
       <div className="px-6 py-3 lg:px-8">
         <div>
@@ -52,7 +52,7 @@ const Navbar = () => {
             <div className="hidden lg:flex lg:min-w-0 lg:justify-center lg:gap-x-10">
               {React.Children.toArray(
                 navigation.map((item) => (
-                  <Link to="/construction">
+                  <Link to={item.href ? item.href : "/construction"}>
                     <span className="font-semibold text-gray-400 hover:text-white text-sm">
                       {item.name}
                     </span>
@@ -101,7 +101,7 @@ const Navbar = () => {
                   <div className="space-y-2 py-6">
                     {React.Children.toArray(
                       navigation.map((item) => (
-                        <Link to="/construction">
+                        <Link to={item.href ? item.href : "/construction"}>
                           <span
                             key={item.name}
                             className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-400/10"
