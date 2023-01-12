@@ -1,6 +1,6 @@
 import React from "react";
-import { Navbar } from "../components";
 import { Footer } from "../containers";
+import { Navbar } from "../components";
 import { Link } from "react-router-dom";
 import construction from "../assets/construction.jpg";
 

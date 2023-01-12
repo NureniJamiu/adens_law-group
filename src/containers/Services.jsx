@@ -33,23 +33,25 @@ const Services = () => {
           </div>
 
           <div className="md:col-span-2 md:grid md:grid-cols-2 md:gap-4">
-            {cardData.map((data) => (
-              <>
-                <div className="bg-white py-10 px-2 rounded-xl md:py-7 md:col-span-1">
-                  <img src={data.icon} alt="icon" className="mx-auto mb-4" />
-                  <h3 className="text-center text-lg font-bold mb-4 md:text-base">
-                    {data.h3}
-                  </h3>
-                  <p className="text-center text-gray-800 mb-4 md:px-5 md:text-sm">
-                    {data.p}
-                  </p>
-                  <a href="#link" className="block mt-10 md:mt-6">
-                    <BsArrowUpRightCircle className="mx-auto text-4xl text-gray-700 md:text-3xl" />
-                  </a>
-                </div>
-                <br className="md:hidden" />
-              </>
-            ))}
+            {React.Children.toArray(
+              cardData.map((data, index) => (
+                <>
+                  <div className="bg-white py-10 px-2 rounded-xl md:py-7 md:col-span-1">
+                    <img src={data.icon} alt="icon" className="mx-auto mb-4" />
+                    <h3 className="text-center text-lg font-bold mb-4 md:text-base">
+                      {data.h3}
+                    </h3>
+                    <p className="text-center text-gray-800 mb-4 md:px-5 md:text-sm">
+                      {data.p}
+                    </p>
+                    <a href="#link" className="block mt-10 md:mt-6">
+                      <BsArrowUpRightCircle className="mx-auto text-4xl text-gray-700 md:text-3xl" />
+                    </a>
+                  </div>
+                  <br className="md:hidden" />
+                </>
+              ))
+            )}
           </div>
         </div>
       </div>
